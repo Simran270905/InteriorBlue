@@ -1,0 +1,204 @@
+@import "tailwindcss";
+
+/* ===============================
+   GLOBAL COLOR VARIABLES
+   (From reference image)
+================================ */
+:root {
+  --primary-bg: #1f2933;     /* Dark blue-grey hero */
+  --accent: #f59e0b;         /* Orange highlights */
+  --section-bg: #f8fafc;     /* Light background */
+  --dark-text: #1f2937;
+  --muted-text: #6b7280;
+  --footer-bg: #111827;
+  --page-bg: #f1f5f9;
+
+}
+
+/* ===============================
+   BASE STYLES
+================================ */
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--dark-text);
+  background-color: var(--page-bg);
+}
+
+/* ===============================
+   REUSABLE CLASSES
+================================ */
+.bg-primary {
+  background-color: var(--primary-bg);
+}
+
+.bg-section {
+  background-color: var(--section-bg);
+}
+
+.bg-footer {
+  background-color: var(--footer-bg);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.text-muted {
+  color: var(--muted-text);
+}
+
+.text-dark {
+  color: var(--dark-text);
+}
+
+.border-accent {
+  border-color: var(--accent);
+}
+
+.bg-page {
+  background-color: var(--page-bg);
+}
+
+.bg-soft {
+  background-color: #e8edf3;
+}
+
+.bg-white-soft {
+  background-color: #fafbfc;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn-primary {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.75rem 2rem;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.65rem 1.75rem;
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+/* ===============================
+   SECTION HEADINGS
+================================ */
+.section-title {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+
+/* ===============================
+   IMAGE STYLE
+================================ */
+.image-card {
+  border-radius: 0.375rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ===============================
+   FORM INPUTS
+================================ */
+.input-field {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  padding: 0.75rem;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+}
+
+input[type="range"] {
+  appearance: none;
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 999px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: var(--accent);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: cronde;
+  src: url("./assets/fonts/crondeitalic.ttf");
+}
+
+@font-face {
+  font-family: crondereg;
+  src: url("./assets/fonts/cronderegular.ttf");
+}
+
+@font-face {
+  font-family: PlayFair;
+  src: url("./assets/fonts/PlayfairDisplayRegular.ttf");
+}
+
+@font-face {
+  font-family: oliver;
+  src: url("./assets/fonts/OliveraDemo.ttf");
+}
+
+@font-face {
+  font-family: transcity;
+  src: url("./assets/fonts/Transcity.otf");
+}
+
+@theme{
+  --font-cronde:cronde;
+  --font-crondereg:crondereg;
+  --font-playfair:PlayFair;
+  --font-oliver:oliver;
+  --font-transcity:transcity;
+}
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}

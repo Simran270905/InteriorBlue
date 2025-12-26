@@ -58,7 +58,7 @@ const Hero = () => {
             <button
               onClick={() => navigate("/projects")}
               className="mt-4 inline-flex items-center bg-[#C9A96A] text-[#1F1F1F]
-              px-8 py-3 font-playfair tracking-wide
+              px-8 py-3 font-playfair font-bold tracking-wide
               transition-all duration-500
               hover:bg-[#B89654] hover:scale-105 hover:shadow-xl hover:shadow-black/30"
             >

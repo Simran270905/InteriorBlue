@@ -21,7 +21,7 @@ const Footer = () => {
         <div>
           <h4 className="text-white mb-4">Contact</h4>
           <p>info@interior.com</p>
-          <p>+91 98765 43210</p>
+          <p>+91 0123456789</p>
         </div>
       </div>
     </footer>

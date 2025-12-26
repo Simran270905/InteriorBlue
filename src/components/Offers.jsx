@@ -32,7 +32,7 @@ const Offers = () => {
   return (
     <section className="font-playfair bg-gradient-to-r from-gray-50 to-gray-100 py-16 px-6">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6 font-transcity">Our Special Offers</h2>
+        <h2 className="text-4xl text-gray-800 mb-6 font-transcity">Our Special Offers</h2>
         <p className="text-gray-600 mb-12">
           Enhance your home with our exclusive offers designed for your comfort and style.
         </p>

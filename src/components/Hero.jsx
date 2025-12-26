@@ -27,7 +27,7 @@ const Hero = () => {
       <Navbar />
 
       {/* Hero Content */}
-      <div className="relative z-10 w-full px-6">
+      <div className="relative z-10 w-full px-10">
         <div className="pt-28 grid md:grid-cols-2 gap-14 items-center">
 
           {/* Text */}

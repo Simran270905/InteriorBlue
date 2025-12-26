@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-screen pt-24 flex items-center overflow-hidden"
+      className="relative min-h-screen pt-24 flex items-center overflow-hidden w-full overflow-x-hidden"
       style={{
         backgroundImage: `url(${hero})`,
         backgroundSize: "cover",
@@ -27,8 +27,8 @@ const Hero = () => {
       <Navbar />
 
       {/* Hero Content */}
-      <div className="relative z-10 w-full">
-        <div className="max-w-7xl mx-auto px-6 pt-28 grid md:grid-cols-2 gap-14 items-center">
+      <div className="relative z-10 w-full px-6">
+        <div className="pt-28 grid md:grid-cols-2 gap-14 items-center">
 
           {/* Text */}
           <div className="space-y-7">
@@ -45,7 +45,7 @@ const Hero = () => {
             </h1>
 
             <p
-              className={`max-w-md font-playfair text-[#D6D3CE] text-[15px] leading-relaxed
+              className={`max-w-full md:max-w-lg font-playfair text-[#D6D3CE] text-[15px] leading-relaxed
               transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
               }`}
@@ -72,8 +72,8 @@ const Hero = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute -top-24 -right-24 w-44 h-44 bg-[#C9A96A]/10 rounded-full blur-2xl animate-float hidden lg:block" />
-      <div className="absolute bottom-20 left-10 w-28 h-28 bg-white/5 rounded-full blur-xl animate-pulse-slow hidden md:block" />
+      <div className="absolute top-[-6rem] right-0 w-44 h-44 bg-[#C9A96A]/10 rounded-full blur-2xl animate-float hidden lg:block" />
+      <div className="absolute bottom-20 left-0 w-28 h-28 bg-white/5 rounded-full blur-xl animate-pulse-slow hidden md:block" />
     </section>
   );
 };

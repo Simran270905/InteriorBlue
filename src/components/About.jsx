@@ -42,7 +42,7 @@ const About = () => {
           </motion.h2>
           
           <motion.h4 
-            className="font-bold font-playfair text-accent uppercase tracking-wide"
+            className="font-bold font-playfair text-[#C9A96A] uppercase tracking-wide"
             variants={{
               hidden: { opacity: 0, y: 30 },
               visible: { opacity: 1, y: 0 }
@@ -75,7 +75,7 @@ const About = () => {
           </motion.p>
 
           <motion.button 
-            className="btn-outline font-playfair mt-8 px-8 py-3 rounded-xl hover:bg-accent hover:text-white transition-all group relative overflow-hidden"
+            className="btn-outline font-playfair mt-8 px-8 py-3 rounded-xl hover:bg-[#C9A96A] hover:text-white transition-all group relative overflow-hidden"
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 }

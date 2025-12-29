@@ -23,7 +23,7 @@ const Companies = () => {
           <motion.div
             className="flex gap-2"
             animate={{ x: ["0%", "-100%"] }}
-            transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
+            transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
           >
             {logos.concat(logos).map((logo, index) => (
               <div key={index} className="flex-shrink-0 w-40 h-20 flex items-center justify-center">

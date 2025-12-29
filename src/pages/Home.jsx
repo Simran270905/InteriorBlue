@@ -10,10 +10,12 @@ import Furniture from "../components/Furniture";
 import Reviews from "../components/Review";
 import EnquirtForm from "../components/Contact";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
     <>
+      <Navbar />
       <section id="home">
         <Hero />
       </section>
